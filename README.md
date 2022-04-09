@@ -1,2 +1,13 @@
-# course-folder-shell
-A Rust-based shell command to create a folder structure to use for a single class every semester. Mostly an excuse to use Rust.
+# A Rust Course Folder Shell
+
+## Motivation
+
+Coming soon.
+
+## Author
+
+[**Sebastián Romero Cruz**](https://github.com/sebastianromerocruz), Adjunct Professor _(They / Them)_
+
+---
+
+<sub>© Sebastián Romero Cruz. 2022</sub>
