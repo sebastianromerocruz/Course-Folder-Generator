@@ -1,9 +1,13 @@
+mod get_user_input;
+
 use std::io;
 use std::io::Write;
 use std::path::Path;
 use std::process::Command;
+use crate::get_user_input::get_user_input;
 
 const CD_COMMAND: &str = "cd";
+const DIR_CHAR: &str = "/";
 
 fn main(){
     loop {
@@ -15,9 +19,7 @@ fn main(){
 
         // Read user input into an empty string
         let mut user_input = String::new();
-        io::stdin()
-            .read_line(&mut user_input)
-            .expect("ERROR: Failed to read command.");
+        user_input = get_user_input(user_input);
 
         // Isolates command and arguments by:
         //     1. Trimming and splitting the input by the whitespace (`" "`)
@@ -34,7 +36,7 @@ fn main(){
                 let new_directory = arguments
                     .peekable()
                     .peek()
-                    .map_or("/", |x| *x);
+                    .map_or(DIR_CHAR, |x| *x);
                 let root = Path::new(new_directory);
 
                 if let Err(e) = std::env::set_current_dir(&root) {
