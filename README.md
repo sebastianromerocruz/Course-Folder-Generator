@@ -1,31 +1,31 @@
-# A Rust Course Folder Shell
+# A Rust Course Folder Shell Script
 
 ### _PROJECT IN PROGRESS (Spring 2022)_
 
-When completed, will create a folder structure of the following schema:
+When completed, script will create a folder structure of the following schema:
 
 ```text
 [root_folder]
   |
   |--[course_name]
-  |    |
-  |    |--[homework]
-  |    |    |
-  |    |    |--[hw_01]
-  |    |    |--[hw_02]
-  |    |
-  |    |--[lab]
-  |    |    |
-  |    |    |--[lab_01]
-  |    |    |--[lab_02]
-  |    |
-  |    |--[lecture_notes]
-  |    |    |
-  |    |    |--[01_syllabus_week]
-  |    |
-  |    |--[exam]
-  |    |    |
-  |    |    |--[midterm_01_review]
+       |
+       |--[homework]
+       |    |
+       |    |--[hw_01]
+       |    |--[hw_02]
+       |
+       |--[lab]
+       |    |
+       |    |--[lab_01]
+       |    |--[lab_02]
+       |
+       |--[lecture_notes]
+       |    |
+       |    |--[01_syllabus_week]
+       |
+       |--[exam]
+            |
+            |--[midterm_01_review]
 ```
 
 ## Usage
